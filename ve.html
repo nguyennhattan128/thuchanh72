@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ve</title>
+</head>
+<body>
+<canvas id="canvas" width=" 150" height="150" style=" border: 1px"></canvas>
+<script>
+    class Rectangle {
+        x;
+        y;
+        width;
+        height;
+        color;
+        constructor(x,y,width,height,color) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+        render(){
+            let x = document.getElementById("canvas");
+            let ctx = x.getContext("2d");
+            ctx.beginPath()
+            ctx.rect(this.x,this.y,this.width,this.height);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+            ctx.closePath();
+        }
+    }
+    let hinhchunhat = new Rectangle(10,10,150,150,"#ff0000" );
+    hinhchunhat.render()
+
+</script>
+</body>
+</html>
