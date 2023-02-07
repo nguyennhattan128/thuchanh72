@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = parseInt(prompt("nhap vao so nguyen"));
+    let array =[];
+    let sum = 0;
+    function sumOfListPrime(x){
+        for(i=0;i<= x;i++){
+            array += i;
+        }
+        for(j=0;j<array.length;j++){
+            sum += parseInt(array[j]);
+        }
+        return sum;
+    }
+    document.write("Tổng các số từ 0 đến X là " + sumOfListPrime(x));
+</script>
+</body>
+</html>

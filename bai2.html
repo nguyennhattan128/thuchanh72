@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let array = [1,2,3,4,5];
+    let x = parseInt(prompt("nhap vao so nguyen"));
+    let vitri = parseInt(prompt("nhap vao vi tri"));
+    let Newarray;
+    function insertNumberToArray(array){
+        if(vitri >0){
+            if(vitri< array.length){
+                for(i = 0;i<array.length;i++){
+                    if(i==vitri){
+                         array.splice(i, 0, x);
+                        Newarray = array;
+                    }
+                }
+            }
+            else{
+                Newarray = array;
+            }
+        }
+    return Newarray;
+    }
+    document.write(insertNumberToArray(array));
+</script>
+</body>
+</html>

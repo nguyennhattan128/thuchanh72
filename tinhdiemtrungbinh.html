@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diem = [8,7,9,10,6];
+    let tong = 0;
+    let diemtrungbinh;
+    function findAvg(diem){
+        for(i=0;i<diem.length;i++){
+            tong += diem[i]
+        }
+        diemtrungbinh = tong/diem.length;
+        return diemtrungbinh;
+    }
+    alert(findAvg(diem));
+</script>
+</body>
+</html>
